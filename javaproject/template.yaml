@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Sample SAM issue
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: pu-avatar
+    Description: Avatar Handler microservices
+    LicenseUrl: License.txt
+    ReadmeUrl: Readme.md
+    HomePageUrl: https://github.com/lucasam/sambuildissue2
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/lucasam/sambuildissue2
+Resources:
+  FunctionOne:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.test.FunctionOne::handleRequest
+      Runtime: java8
+      MemorySize: 128

@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Sample SAM issue
+Resources:
+  AvatarApplication:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location: https://s3.amazonaws.com/pu-base-buckets-prod-functions/41c665fe10f20b0417eb7f684d7a8072.template
